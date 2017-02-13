@@ -1,0 +1,99 @@
+$topbar-bkgnd: #025aa5;
+$topbar-text: #fff;
+$nav-buttons-bkgnd: #ddd;
+
+#advisor {
+    font-size: 20px;
+    ul {
+        padding: 0;
+    }
+    li {
+        list-style: none;
+    }
+    img {
+        border-radius: 10px;
+    }
+    .row {
+        margin: 0;
+    }
+    .topbar {
+        background: $topbar-bkgnd;
+        padding: 10px 0;
+        color: $topbar-text;
+        .questions {
+            .question {
+                .question-text {
+                    text-align: center;
+                    padding: 20px 0;
+                    font-size: 30px;
+                    font-weight: bold;
+                }
+                .answers {
+                    .answer {
+                        img {
+                            width: 100%;
+                        	display: block;
+                        }
+                        .answer-text {
+                            text-align: center;
+                            padding: 10px 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .nav-buttons-wrapper {
+        background: $nav-buttons-bkgnd;
+        padding: 10px 0;
+        .nav-buttons {
+            padding: 0 30px;
+            .nav-button {
+                display: inline-block;
+                padding: 10px;
+                width: 150px;
+                color: #fff;
+                text-align: center;
+                background: darkslategray;
+                border-radius: 5px;
+                &.back-button {
+                    float: left;
+                }
+                &.next-button {
+                    float: right;
+                }
+            }
+        }
+    }
+    .content {
+        .cluster {
+            .cluster-headline {
+                text-align: center;
+                padding: 20px 0;
+                font-size: 30px;
+                font-weight: bold;
+            }
+            .products {
+                .product {
+                    margin-bottom: 30px;
+                    img {
+                        width: 100%;
+                        display: block;
+                    }
+                    .product-content {
+                        .product-title {
+                            text-align: center;
+                            padding: 10px 0;
+                        }
+                        .product-attributes {
+                            padding-left: 15px;
+                            .product-attribute {
+                                list-style-type: circle;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

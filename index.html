@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Advisor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="bower_components/mocha/mocha.css" />
+</head>
+
+<body>
+
+    <div id="mocha"></div>
+
+    <div id="advisor">
+        <div class="topbar">
+            <ul class="questions">
+                <li class="question container">
+                    <div class="question-text">What are you going to use your laptop for?</div>
+                    <ul class="answers row">
+                        <li class="answer col-xs-12 col-sm-6 col-md-4">
+                            <img src="http://lorempixel.com/250/200/technics/1/"
+                                class="answer-image">
+                            </img>
+                            <div class="answer-text">Internet and music</div>
+                        </li>
+                        <li class="answer col-xs-12 col-sm-6 col-md-4">
+                            <img src="http://lorempixel.com/250/200/technics/3/"
+                                class="answer-image">
+                            </img>
+                            <div class="answer-text">Design or video editing</div>
+                        </li>
+                        <li class="answer col-xs-12 col-sm-6 col-md-4">
+                            <img src="http://lorempixel.com/250/200/technics/5/"
+                                class="answer-image">
+                            </img>
+                            <div class="answer-text">Videogaming</div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-buttons-wrapper">
+            <div class="nav-buttons container">
+                <div class="nav-button back-button">Back</div>
+                <div class="nav-button next-button">Next</div>
+            </div>
+        </div>
+        <div class="content container">
+            <div class="cluster matches-all row">
+                <div class="cluster-headline">These products fit your needs</div>
+                <ul class="products row">
+                    <li class="product col-xs-12 col-sm-6 col-md-4">
+                        <img src="http://lorempixel.com/250/200/technics/6/"
+                            class="product-image">
+                        </img>
+                        <div class="product-content">
+                            <div class="product-title">Laptop ABC</div>
+                            <ul class="product-attributes">
+                                <li class="product-attribute">8GB RAM</li>
+                                <li class="product-attribute">14" screen</li>
+                                <li class="product-attribute">Intel Core i7</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="product col-xs-12 col-sm-6 col-md-4">
+                        <img src="http://lorempixel.com/250/200/technics/7/"
+                            class="product-image">
+                        </img>
+                        <div class="product-content">
+                            <div class="product-title">Laptop XYZ</div>
+                            <ul class="product-attributes">
+                                <li class="product-attribute">6GB RAM</li>
+                                <li class="product-attribute">14" screen</li>
+                                <li class="product-attribute">Intel Core i5</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="product col-xs-12 col-sm-6 col-md-4">
+                        <img src="http://lorempixel.com/250/200/technics/9/"
+                            class="product-image">
+                        </img>
+                        <div class="product-content">
+                            <div class="product-title">Laptop GHJ</div>
+                            <ul class="product-attributes">
+                                <li class="product-attribute">4GB RAM</li>
+                                <li class="product-attribute">15" screen</li>
+                                <li class="product-attribute">Intel Core i3</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="cluster matches-some row"></div>
+        </div>
+    </div>
+
+
+    <script src="bower_components/mocha/mocha.js"></script>
+    <script src="bower_components/chai/chai.js"></script>
+    <script>mocha.setup('bdd');</script>
+    <script>expect = chai.expect;</script>
+    <script src="tests.js"></script>
+    <script>mocha.run();</script>
+
+</body>
+
+</html>

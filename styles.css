@@ -1,0 +1,61 @@
+#advisor {
+  font-size: 20px; }
+  #advisor ul {
+    padding: 0; }
+  #advisor li {
+    list-style: none; }
+  #advisor img {
+    border-radius: 10px; }
+  #advisor .row {
+    margin: 0; }
+  #advisor .topbar {
+    background: #025aa5;
+    padding: 10px 0;
+    color: #fff; }
+    #advisor .topbar .questions .question .question-text {
+      text-align: center;
+      padding: 20px 0;
+      font-size: 30px;
+      font-weight: bold; }
+    #advisor .topbar .questions .question .answers .answer img {
+      width: 100%;
+      display: block; }
+    #advisor .topbar .questions .question .answers .answer .answer-text {
+      text-align: center;
+      padding: 10px 0; }
+  #advisor .nav-buttons-wrapper {
+    background: #ddd;
+    padding: 10px 0; }
+    #advisor .nav-buttons-wrapper .nav-buttons {
+      padding: 0 30px; }
+      #advisor .nav-buttons-wrapper .nav-buttons .nav-button {
+        display: inline-block;
+        padding: 10px;
+        width: 150px;
+        color: #fff;
+        text-align: center;
+        background: darkslategray;
+        border-radius: 5px; }
+        #advisor .nav-buttons-wrapper .nav-buttons .nav-button.back-button {
+          float: left; }
+        #advisor .nav-buttons-wrapper .nav-buttons .nav-button.next-button {
+          float: right; }
+  #advisor .content .cluster .cluster-headline {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    font-weight: bold; }
+  #advisor .content .cluster .products .product {
+    margin-bottom: 30px; }
+    #advisor .content .cluster .products .product img {
+      width: 100%;
+      display: block; }
+    #advisor .content .cluster .products .product .product-content .product-title {
+      text-align: center;
+      padding: 10px 0; }
+    #advisor .content .cluster .products .product .product-content .product-attributes {
+      padding-left: 15px; }
+      #advisor .content .cluster .products .product .product-content .product-attributes .product-attribute {
+        list-style-type: circle; }
+
+/*# sourceMappingURL=styles.css.map */
